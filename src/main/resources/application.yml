@@ -1,6 +1,8 @@
 spring:
  application:
   name: Accommodation-Marketplace
+ config:
+   import: optional:file:.env[.properties]
  datasource:
    url: ${DATASOURCE_URL}
    username: ${MYSQL_USER}
