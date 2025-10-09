@@ -16,3 +16,7 @@ spring:
        hibernate:
          format-sql: false
 
+# App Configuration
+app:
+  jwt:
+    secret: ${JWT_SECRET}

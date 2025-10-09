@@ -1,6 +1,6 @@
 package com.dcl.accommodate.model;
 
-import com.dcl.accommodate.enums.UserRoles;
+import com.dcl.accommodate.enums.UserRole;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.*;
@@ -43,7 +43,7 @@ public class User {
     @Column(name = "user_role", nullable = false)
     @Enumerated(EnumType.STRING)                // Assuming Role is an Enum: public enum UserRoles { GUEST, HOST }
     @NotNull(message = "Role is required.")     // role - Required. Must be one of the enum values (handled by validation logic below).
-    private UserRoles roles;
+    private UserRole roles;
 
 
     // user email validation

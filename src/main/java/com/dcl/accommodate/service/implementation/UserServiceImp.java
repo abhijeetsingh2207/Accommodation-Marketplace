@@ -1,6 +1,6 @@
 package com.dcl.accommodate.service.implementation;
 import com.dcl.accommodate.dto.request.UserRegistrationRequest;
-import com.dcl.accommodate.enums.UserRoles;
+import com.dcl.accommodate.enums.UserRole;
 import com.dcl.accommodate.exception.customException.UserAlreadyExistsByEmailException;
 import com.dcl.accommodate.model.User;
 import com.dcl.accommodate.repository.UserRepository;
@@ -34,7 +34,7 @@ public class UserServiceImp implements UserService {
                 .password((userRegistrationRequest.password()))
                 .phoneNumber(userRegistrationRequest.phoneNumber())
                 .dateOfBirth(userRegistrationRequest.dateOfBirth())
-                .roles(UserRoles.GUEST)    // all the user are GUEST by default
+                .roles(UserRole.GUEST)    // all the user are GUEST by default
                 .build();
     }
 }

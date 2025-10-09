@@ -1,6 +1,6 @@
 package com.dcl.accommodate.dto.response;
 
-import com.dcl.accommodate.enums.UserRoles;
+import com.dcl.accommodate.enums.UserRole;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,7 +14,7 @@ public class UserResponse {
  private String lastName;
  private LocalDate dateOfBirth;
  private String email;
- private UserRoles role;
+ private UserRole role;
  private String avatar;
  private String createdAt;
  private String lastUpdatedAt;
